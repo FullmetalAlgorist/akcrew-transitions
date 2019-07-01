@@ -27,4 +27,4 @@ info panels... maybe dif versions for mobile vs desktop. for processing  sketche
 change active button to colored the right way
 
 backup laptop, get transitions going
-practice githun and heroku situation with transitions
+practice github and heroku situation with transitions, best practices.
