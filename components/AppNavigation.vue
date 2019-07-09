@@ -5,7 +5,8 @@
       dark
       extended
       flat
-
+      height="75px"
+    :style="{'background-image': 'url(' + require('@/assets/mariah.jpg') + ')'}"
     >
     </v-toolbar>
 
@@ -86,7 +87,8 @@ li{
     list-style: none;
 }
 .tool{
-    background-color: #c9c9c9;
+   background-size: cover;
+   background-position: center;
 }
 .v-btn--active{
     background-color:rgba(255, 255, 255, 0.2) !important;
