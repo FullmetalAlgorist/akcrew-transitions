@@ -5,31 +5,42 @@
       dark
       extended
       flat
-
     >
+      <v-toolbar-side-icon light></v-toolbar-side-icon>
     </v-toolbar>
 
-    <v-layout row pb-2           column
-            align-center
-            justify-center>
-      <v-flex xs8 offset-xs2 class="innerTool">
+    <v-layout row pb-2>
+      <v-flex xs8 offset-xs2>
         <v-card class="card--flex-toolbar">
           <v-toolbar card prominent>
-            <v-toolbar-title class="body-2 grey--text ">
-                 <ul class="buttonRow">
-      <v-btn to="/hello" tag="li" large outline  color="white">parallax</v-btn> 
-      <v-btn to="/inspire" tag="li" large outline color="white">blog</v-btn>
-    </ul>
-            </v-toolbar-title>
+            <v-toolbar-title class="body-2 grey--text">Mariah's Website Examples</v-toolbar-title>
 
-            <!-- <v-spacer></v-spacer> -->
+            <v-spacer></v-spacer>
+
+            <v-btn icon>
+              <v-icon>search</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+              <v-icon>apps</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+              <v-icon>more_vert</v-icon>
+            </v-btn>
           </v-toolbar>
 
           <v-divider></v-divider>
 
-          <v-card-text style="height: 75px;">
+          <v-card-text style="height: 100px;">
          
-       
+            <ul class="buttonRow">
+   <!-- <v-btn to="/" tag="li" flat large outline light color="white">index</v-btn> -->
+      <v-btn to="/hello" tag="li" large outline  color="white">parralax</v-btn> 
+      <!-- light -->
+      <v-btn to="/inspire" tag="li" large outline color="white">blog</v-btn>
+    </ul>
+      
           </v-card-text>
         </v-card>
       </v-flex>
@@ -91,14 +102,4 @@ li{
 .v-btn--active{
     background-color:rgba(255, 255, 255, 0.2) !important;
 }
-.innerTool{
-margin-left: 5%;
-margin-right: 5%;
-max-width: 100%;
-}
-
-ul {
-  padding: 0;
-}
-
 </style>
