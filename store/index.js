@@ -1,5 +1,6 @@
 export const state = () => ({
-    page: 'index'
+    page: 'index',
+    articles: require('@/data/articles.json'),
   })
   
   export const mutations = {
