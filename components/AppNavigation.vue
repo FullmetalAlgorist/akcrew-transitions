@@ -6,7 +6,7 @@
       extended
       flat
       height="75px"
-    :style="{'background-image': 'url(' + require('@/assets/mariah.jpg') + ')'}"
+    :style="{'background-image': 'url(' + require('@/assets/trianglifyLarge.png') + ')'}"
     >
     </v-toolbar>
 <!-- EXTRA PADDING v pb-2   -->
@@ -32,7 +32,7 @@
 
           <v-card-text style="height: 75px;">
          
-       
+       <vue-typer text='Hello World... Imagine how amazing your content would look in this format! The world is your oyster.................'></vue-typer>
           </v-card-text>
         </v-card>
       <!-- </v-flex> -->
@@ -41,9 +41,13 @@
 </template>
 <script>
 import { mapState } from 'vuex'
+import { VueTyper } from 'vue-typer'
 
 export default {
-  computed: mapState(['page'])
+  computed: mapState(['page']),
+      components: {
+          'vue-typer': VueTyper
+    },
 }
 </script>
 <style lang="scss" scoped>

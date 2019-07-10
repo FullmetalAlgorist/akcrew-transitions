@@ -2,7 +2,7 @@
   <div class="parallax">
     <v-content>
       <section>
-        <v-parallax :src="require('@/assets/two.png')" height="600">
+        <v-parallax :src="require('@/assets/two.png')" height="500">
           <v-layout
             column
             align-center
@@ -22,7 +22,6 @@
             <h1 class="white--text mb-2 display-1 text-xs-center">Oh hello</h1>
             <div class="subheading mb-3 text-xs-center">welcome</div>
           </div>
-      
           </v-layout>
         </v-parallax>
       </section>
@@ -68,7 +67,7 @@
       </section>
 
       <section>
-        <v-parallax class="lines" :src="require('@/assets/three.png')" height="680">
+        <v-parallax class="lines" :src="require('@/assets/three.png')" >
           <v-layout column align-center justify-center>
             <h1 class="black--text mb-2 display-1 text-xs-center">Hire me today!</h1>
             <!-- <em>Kick-start your application today</em> -->
@@ -203,7 +202,8 @@
 }
 .parallax{
   /* margin: 0, 3, 5, 0; */
-  margin-top: -100px;
+  /* margin-top: -100px;   //fix alignment  issues if going with this method*/ 
+margin-top: -75px;
 }
 
 </style>
