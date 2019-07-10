@@ -9,12 +9,14 @@
     :style="{'background-image': 'url(' + require('@/assets/mariah.jpg') + ')'}"
     >
     </v-toolbar>
-
-    <v-layout row pb-2           column
-            align-center
-            justify-center>
-      <v-flex xs8 offset-xs2 class="innerTool">
-        <v-card class="card--flex-toolbar">
+<!-- EXTRA PADDING v pb-2   -->
+    <v-layout   
+    align-start 
+            fill-height
+            justify-center
+            >
+      <!-- <v-flex xs8 offset-xs2 class="innerTool"> -->
+        <v-card class="card--flex-toolbar above">
           <v-toolbar card prominent>
             <v-toolbar-title class="body-2 grey--text ">
                  <ul class="buttonRow">
@@ -33,7 +35,7 @@
        
           </v-card-text>
         </v-card>
-      </v-flex>
+      <!-- </v-flex> -->
     </v-layout>
 </div>
 </template>
@@ -102,5 +104,7 @@ max-width: 100%;
 ul {
   padding: 0;
 }
-
+.above{
+  z-index: 10;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="parralax">
+  <div class="parallax">
     <v-content>
       <section>
         <v-parallax :src="require('@/assets/two.png')" height="600">
@@ -201,5 +201,10 @@
 .lines{
 
 }
+.parallax{
+  /* margin: 0, 3, 5, 0; */
+  margin-top: -100px;
+}
+
 </style>
 
