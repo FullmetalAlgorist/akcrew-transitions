@@ -32,7 +32,7 @@
 
           <v-card-text class="type" style="height: 75px;">
          
-       <vue-typer class="type" text='Hey! Imagine how great your content would look on this page! So fucking good!.... the possibilites are  endless! . . . .  . . . . '></vue-typer>
+       <vue-typer class="type" text='Welcome to my PARALLAX demo page :)'></vue-typer>
           </v-card-text>
         </v-card>
       <!-- </v-flex> -->
