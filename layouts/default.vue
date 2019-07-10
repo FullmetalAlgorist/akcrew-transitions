@@ -16,6 +16,7 @@
 </template>
 <script>
 import AppNavigation from '~/components/AppNavigation.vue'
+  // import { VueTyper } from 'vue-typer'
 
 export default {
   data(){
@@ -25,6 +26,7 @@ export default {
   },
   components: {
     AppNavigation,
+    // VueTyper
   }
 }
 </script>

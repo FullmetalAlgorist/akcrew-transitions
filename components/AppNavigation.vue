@@ -18,7 +18,7 @@
       <!-- <v-flex xs8 offset-xs2 class="innerTool"> -->
         <v-card class="card--flex-toolbar above">
           <v-toolbar card prominent>
-            <v-toolbar-title class="body-2 grey--text ">
+            <v-toolbar-title class="body-2">
                  <ul class="buttonRow">
       <v-btn to="/hello" tag="li" large outline  color="white">parallax</v-btn> 
       <v-btn to="/inspire" tag="li" large outline color="white">blog</v-btn>
@@ -30,9 +30,9 @@
 
           <v-divider></v-divider>
 
-          <v-card-text style="height: 75px;">
+          <v-card-text class="type" style="height: 75px;">
          
-       <vue-typer text='Hello World... Imagine how amazing your content would look in this format! The world is your oyster.................'></vue-typer>
+       <vue-typer class="type" text='Hey! Imagine how great your content would look on this page! So fucking good!.... the possibilites are  endless! . . . .  . . . . '></vue-typer>
           </v-card-text>
         </v-card>
       <!-- </v-flex> -->
@@ -41,13 +41,15 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-import { VueTyper } from 'vue-typer'
+if (process.browser) {
+  var VueTyper = require('vue-typer').VueTyper
+}
 
 export default {
   computed: mapState(['page']),
-      components: {
-          'vue-typer': VueTyper
-    },
+  components: {
+   VueTyper
+},
 }
 </script>
 <style lang="scss" scoped>
@@ -111,4 +113,8 @@ ul {
 .above{
   z-index: 10;
 }
+.type{
+  background-color: #c0c0c0;
+}
+
 </style>
