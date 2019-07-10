@@ -21,7 +21,7 @@
           <v-toolbar card prominent>
             <v-toolbar-title class="body-2">
                  <ul class="buttonRow">
-      <v-btn to="/hello" tag="li" large outline  color="white">parallax</v-btn> 
+      <v-btn to="/hello" tag="li" large outline  color="white">Scrolling</v-btn> 
       <v-btn to="/inspire" tag="li" large outline color="white">blog</v-btn>
     </ul>
             </v-toolbar-title>
@@ -31,9 +31,9 @@
 
           <v-divider></v-divider>
 
-          <v-card-text class="type" style="height: 75px;">
+          <v-card-text class="type" >
          
-       <vue-typer  erase-style='backspace' text='Hi! How about this layout? Perfect for mobile or scrolling websites! '></vue-typer>
+       <vue-typer erase-style='backspace' text="Scroll down to see 'parallax' effect!"></vue-typer>
           </v-card-text>
         </v-card>
       <!-- </v-flex> -->
@@ -116,6 +116,10 @@ ul {
 }
 .type{
   background-color: #c0c0c0;
+}
+.vue-typer {
+  // font-weight: bold;
+  font-size: 130%;
 }
 
 </style>
