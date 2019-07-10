@@ -10,8 +10,9 @@
     >
     </v-toolbar>
 <!-- EXTRA PADDING v pb-2   -->
+<!-- align these buttons to   enter while expanding (maybe through computed properties?) -->
     <v-layout   
-    align-start 
+    align-center
             fill-height
             justify-center
             >
@@ -32,7 +33,7 @@
 
           <v-card-text class="type" style="height: 75px;">
          
-       <vue-typer class="type" text='Welcome to my PARALLAX demo page :)'></vue-typer>
+       <vue-typer  erase-style='backspace' text='Hi! How about this layout? Perfect for mobile or scrolling websites! '></vue-typer>
           </v-card-text>
         </v-card>
       <!-- </v-flex> -->
