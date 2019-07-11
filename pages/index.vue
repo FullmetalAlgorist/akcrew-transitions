@@ -67,7 +67,7 @@
       </section>
 
       <section>
-        <v-parallax class="lines" :src="require('@/assets/three.png')" >
+        <v-parallax class="lines" :src="require('@/assets/three5.png')" >
           <v-layout column align-end justify-center >
             <!-- align-center justify-center -->
             <h1 class="black--text mb-2 display-1 text-xs-right">Hire me today!</h1>
@@ -199,18 +199,29 @@
     margin-bottom: 20px;
 }
 .lines{
+   /* top: 11%; */
+   /* margin-top: 20%; */
+    /* margin-top: 10% !important; */
   /* background-size: cover; */
-   background-position: center right;
+   /* background-position: center right; */
    /* position: left left; */
   /* position: fixed; */
   /* background-attachment: fill; */
 
 }
-.parallax{
+.v-parallax__image{
+ 
   /* margin: 0, 3, 5, 0; */
-  /* margin-top: -100px;   //fix alignment  issues if going with this method*/ 
-margin-top: -75px;
+  /* margin-top: 60% !important;    */
+  /* //fix alignment  issues if going with this method  */
+/* left: 75%; */
 }
-
+/* <img src="/_nuxt/assets/three.png" alt="" class="v-parallax__image" style="display: block; opacity: 1; margin-left: 50%; transform: translate(-50%, -60px);"> */
+/* heigfht 400 ish then adjust top margin on text */
+/* top: 11%;
+    left: 78%; */
+    /* fuck with these props and  variations depending on screen size */
+/* on small screen for title and button margin-top: 220px; */
 </style>
 
+ 
