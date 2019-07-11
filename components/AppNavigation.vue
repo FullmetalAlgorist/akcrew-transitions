@@ -6,7 +6,7 @@
       extended
       flat
       height="75px"
-    :style="{'background-image': 'url(' + require('@/assets/trianglifyLarge.png') + ')'}"
+    :style="{'background-image': 'url(' + banner + ')'}"
     >
     </v-toolbar>
 <!-- EXTRA PADDING v pb-2   -->
@@ -21,7 +21,7 @@
           <v-toolbar card prominent>
             <v-toolbar-title class="body-2">
                  <ul class="buttonRow">
-      <v-btn to="/hello" tag="li" large outline  color="white">Scrolling</v-btn> 
+      <v-btn to="/" tag="li" large outline  color="white">Scrolling</v-btn> 
       <v-btn to="/inspire" tag="li" large outline color="white">blog</v-btn>
     </ul>
             </v-toolbar-title>
@@ -33,7 +33,7 @@
 
           <v-card-text class="type" >
          
-       <vue-typer erase-style='backspace' text="Scroll down to see 'parallax' effect!"></vue-typer>
+       <vue-typer erase-style='backspace' :text="toType"></vue-typer>
           </v-card-text>
         </v-card>
       <!-- </v-flex> -->
@@ -47,7 +47,25 @@ if (process.browser) {
 }
 
 export default {
-  computed: mapState(['page']),
+  data(){
+return {
+  toType: 'Scroll down to see parallax effect :)'
+}
+  },
+  computed: {
+    ...mapState(['page']),
+  banner (){
+    if(this.page === 'inspire')
+    {
+      this.toType='Welcome to my simple photo blog!';
+      return require('@/assets/rocks.jpg')
+    }
+    else{
+      this.toType= 'Scroll down to see parallax effect :)';
+      return require('@/assets/trianglifyLarge.png')
+    }
+  }
+  },
   components: {
    VueTyper
 },
@@ -97,7 +115,7 @@ li{
 }
 .tool{
    background-size: cover;
-   background-position: center;
+   background-position: bottom;
 }
 .v-btn--active{
     background-color:rgba(255, 255, 255, 0.2) !important;

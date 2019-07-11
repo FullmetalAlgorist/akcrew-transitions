@@ -1,6 +1,7 @@
 <template>
   <v-container
     grid-list-xl
+    class="blog"
   >
     <v-layout wrap>
       <v-flex xs12>
@@ -68,7 +69,7 @@
     },
 
     data: () => ({
-      layout: [2, 2, 1, 2, 2, 3, 3, 3, 3, 3, 3],
+      layout: [1, 2, 2, 1, 2, 2, 3, 3, 3, 3, 3, 3],
       page: 1
     }),
 
@@ -92,3 +93,9 @@
     }
   }
 </script>
+<style lang="scss" scoped>
+.blog{
+  margin-top: -100px;
+}
+</style>
+
