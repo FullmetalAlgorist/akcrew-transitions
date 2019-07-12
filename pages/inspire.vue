@@ -72,7 +72,6 @@
       layout: [1, 2, 2, 1, 2, 2, 3, 3, 3, 3, 3, 3],
       page: 1
     }),
-
     computed: {
       ...mapState(['articles']),
       pages () {

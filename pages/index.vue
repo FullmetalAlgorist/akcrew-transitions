@@ -118,8 +118,16 @@
         </v-container>
       </section>
 
+<div v-for="text in texts" :key="text.id">
 <parallaxx :srrc="require('@/assets/three.png')"></parallaxx>
-<parallaxx-text></parallaxx-text>
+<parallaxx-text 
+  :title="text.title" 
+  :text1="text.text1" 
+  :secondTitle="text.secondTitle" 
+  :text2="text.text2">
+</parallaxx-text>
+</div>
+
 <parallaxx :srrc="require('@/assets/four.png')"></parallaxx>
 <parallaxx-text></parallaxx-text>
 <parallaxx :srrc="require('@/assets/five.png')"></parallaxx>
@@ -131,6 +139,11 @@
 </template>
 
 <script>
+  // Utilities
+  import {
+    mapState
+  } from 'vuex'
+
   export default {
      components: {
       Parallaxx: () => import('@/components/Parallax'),
@@ -139,7 +152,8 @@
     computed:{
       med(){
         return this.$vuetify.breakpoint.mdAndUp;
-      }
+      },
+      ...mapState(['texts']),
     },
     data: () => ({
       imagine: '@/assets/gallery/IMG_5992.jpg'
