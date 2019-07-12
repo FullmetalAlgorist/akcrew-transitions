@@ -42,10 +42,10 @@
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
-                <v-flex xs12 md4>
+                <v-flex xs12 >
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Material Design</div>
@@ -90,7 +90,7 @@
                       <v-icon x-large class="blue--text text--lighten-2">mdi-flash_on</v-icon>
                     </v-card-text> -->
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">  <v-icon>information</v-icon> Fast development</div>
+                      <div class="headline"> Fast development</div>
                     </v-card-title>
                     <v-card-text>
                       Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
@@ -102,7 +102,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">mdi-build</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Completely Open Sourced</div>
@@ -118,8 +118,8 @@
         </v-container>
       </section>
 
-<div v-for="text in texts" :key="text.id">
-<parallaxx :srrc="require('@/assets/three.png')"></parallaxx>
+<div v-for="(text, index) in texts" :key="text.id">
+<parallaxx :srrc="require('@/assets/'+(index+3)+'.png')"></parallaxx>
 <parallaxx-text 
   :title="text.title" 
   :text1="text.text1" 
@@ -127,13 +127,13 @@
   :text2="text.text2">
 </parallaxx-text>
 </div>
-
+<!-- 
 <parallaxx :srrc="require('@/assets/four.png')"></parallaxx>
 <parallaxx-text></parallaxx-text>
 <parallaxx :srrc="require('@/assets/five.png')"></parallaxx>
 <parallaxx-text></parallaxx-text>
 <parallaxx :srrc="require('@/assets/six.png')"></parallaxx>
-<parallaxx-text></parallaxx-text>
+<parallaxx-text></parallaxx-text> -->
     </v-content>
   </div>
 </template>
@@ -156,7 +156,10 @@
       ...mapState(['texts']),
     },
     data: () => ({
-      imagine: '@/assets/gallery/IMG_5992.jpg'
+      imagine: '@/assets/gallery/IMG_5992.jpg',
+      superImages: [
+
+      ]
     })
   }
 </script>
