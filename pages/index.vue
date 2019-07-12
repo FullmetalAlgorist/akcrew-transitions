@@ -62,83 +62,35 @@
         </v-layout>
       </section>
 
-      <section>
+<parallaxx :srrc="require('@/assets/one.png')"></parallaxx>
+      <!-- <section>
         <v-parallax class="lines" :src="require('@/assets/three6.png')" height="400">
           <v-layout column align-end justify-center >
-            <!-- align-center justify-center -->
-            <!-- <h1 class="black--text mb-2 display-1 text-xs-right">Hire me today!</h1> -->
-            <!-- <em>Kick-start your application today</em> -->
-            <v-btn
-            
-              class="lighten-2 mt-5 mr-4"
-              dark
-              large
-            >
-              Get Started
-            </v-btn>
+                <div  class="text-xs-center">
+      <v-img
+      class="logo"
+     height="175"
+     width="175"
+        :src="require('@/assets/logosblack.png')"
+      > </v-img>  -->
+     <!-- <v-icon  class="ico">home</v-icon> -->
+<!-- </div>
+           
           </v-layout>
         </v-parallax>
-      </section>
+      </section> -->
 
       <section>
         <v-container grid-list-xl>
           <v-layout row wrap justify-center class="my-5">
-            <!-- <v-flex xs12 sm4>
-              <v-card class="elevation-0 transparent">
-                <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Company info</div>
-                </v-card-title>
-                <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                  Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 sm4 offset-sm1>
-              <v-card class="elevation-0 transparent">
-                <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Contact us</div>
-                </v-card-title>
-                <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                </v-card-text>
-                <v-list class="transparent">
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">mdi-phone</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>777-867-5309</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">mdi-place</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>Chicago, US</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">mdi-email</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                </v-list>
-              </v-card>
-            </v-flex>
-          </v-layout> -->
+           
               <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <!-- <v-card-text class="text-xs-center">
                       <v-icon x-large class="blue--text text--lighten-2">mdi-flash_on</v-icon>
                     </v-card-text> -->
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
+                      <div class="headline">  <v-icon>information</v-icon> Fast development</div>
                     </v-card-title>
                     <v-card-text>
                       Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
@@ -165,14 +117,24 @@
           </v-layout>
         </v-container>
       </section>
+
+<parallaxx :srrc="require('@/assets/three.png')"></parallaxx>
+<parallaxx-text></parallaxx-text>
+<parallaxx :srrc="require('@/assets/four.png')"></parallaxx>
+<parallaxx-text></parallaxx-text>
+<parallaxx :srrc="require('@/assets/five.png')"></parallaxx>
+<parallaxx-text></parallaxx-text>
+<parallaxx :srrc="require('@/assets/six.png')"></parallaxx>
+<parallaxx-text></parallaxx-text>
     </v-content>
   </div>
 </template>
 
 <script>
   export default {
-    components: {
-
+     components: {
+      Parallaxx: () => import('@/components/Parallax'),
+      ParallaxxText: () => import('@/components/ParallaxText')
     },
     computed:{
       med(){
@@ -195,30 +157,27 @@
     /* margin-top: 70px; */
     margin-bottom: 20px;
 }
-.lines{
-   /* top: 11%; */
-   /* margin-top: 20%; */
-    /* margin-top: 10% !important; */
-  /* background-size: cover; */
-   /* background-position: center right; */
-   /* position: left left; */
-  /* position: fixed; */
-  /* background-attachment: fill; */
+.avatar{
+  background-color: black;
+}
+.logo{
+  margin-top: 150px;
+}
+.ico{
+ /* margin-bottom: 80px; */
+ margin-top: 76px;
+}
 
-}
-.v-parallax__image{
- 
-  /* margin: 0, 3, 5, 0; */
-  /* margin-top: 60% !important;    */
-  /* //fix alignment  issues if going with this method  */
-/* left: 75%; */
-}
-/* <img src="/_nuxt/assets/three.png" alt="" class="v-parallax__image" style="display: block; opacity: 1; margin-left: 50%; transform: translate(-50%, -60px);"> */
-/* heigfht 400 ish then adjust top margin on text */
+
+
+
+
+
 /* top: 11%;
     left: 78%; */
     /* fuck with these props and  variations depending on screen size */
 /* on small screen for title and button margin-top: 220px; */
+
 </style>
 
  
