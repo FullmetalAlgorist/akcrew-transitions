@@ -6,7 +6,6 @@
           <v-layout
             column
             align-center
-            class="white--text"
             justify-center
           > 
               <v-btn
@@ -14,7 +13,6 @@
               light
               small
               fab
-             
             >
             </v-btn>
             <!-- <img src="@/assets/logos/bierebw.png" alt="Vuetify.js" height="200"> -->
@@ -54,8 +52,6 @@
                     </v-card-title>
                     <v-card-text>
                       Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -67,13 +63,14 @@
       </section>
 
       <section>
-        <v-parallax class="lines" :src="require('@/assets/three5.png')" >
+        <v-parallax class="lines" :src="require('@/assets/three6.png')" height="400">
           <v-layout column align-end justify-center >
             <!-- align-center justify-center -->
-            <h1 class="black--text mb-2 display-1 text-xs-right">Hire me today!</h1>
+            <!-- <h1 class="black--text mb-2 display-1 text-xs-right">Hire me today!</h1> -->
             <!-- <em>Kick-start your application today</em> -->
             <v-btn
-              class="lighten-2 mt-4 mr-4"
+            
+              class="lighten-2 mt-5 mr-4"
               dark
               large
             >
