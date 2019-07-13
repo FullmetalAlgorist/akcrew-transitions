@@ -48,14 +48,15 @@
                       <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">Imagine this page full of your content!</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
+                      Especially attractive in mobile environments, this could be a starting point for any website need you may have. From stunning personal blogs to eye catching E-commerce stores. The parallax world is your oyster.  Fully customizable and 
                     </v-card-text>
                   </v-card>
                 </v-flex>
-            
+
+
               </v-layout>
             </v-container>
           </v-flex>

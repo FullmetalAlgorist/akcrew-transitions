@@ -25,7 +25,7 @@
           square
           @click="page--"
         >
-          <v-icon>mdi-chevron-left</v-icon>
+          <v-icon>arrow_backward_ios</v-icon>
         </base-btn>
       </v-flex>
 
@@ -48,7 +48,7 @@
           square
           @click="page++"
         >
-          <v-icon>mdi-chevron-right</v-icon>
+          <v-icon>arrow_forward_ios</v-icon>
         </base-btn>
       </v-flex>
     </v-layout>
@@ -69,17 +69,17 @@
     },
 
     data: () => ({
-      layout: [1, 2, 2, 1, 2, 2, 3, 3, 3, 3, 3, 3],
+      layout: [2, 2, 1, 2, 2, 3, 3, 3, 1],
       page: 1
     }),
     computed: {
       ...mapState(['articles']),
       pages () {
-        return Math.ceil(this.articles.length / 11)
+        return Math.ceil(this.articles.length / 9)
       },
       paginatedArticles () {
-        const start = (this.page - 1) * 11
-        const stop = this.page * 11
+        const start = (this.page - 1) * 9
+        const stop = this.page * 9
 
         return this.articles.slice(start, stop)
       }

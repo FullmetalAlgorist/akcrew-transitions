@@ -1,73 +1,143 @@
 [
   {
-    "title": "Beach Days",
+    "title": "Blue Heron in action",
     "author": "Mariah",
-    "category": "Travel",
-    "hero": "loggy.jpg"
+    "category": "Wildlife",
+    "hero": "lichen.jpg"
   },
   {
     "title": "Moroccan Days",
     "author": "John L",
     "category": "Travel",
-    "hero": "moroccandays.jpg"
+    "hero": "maybe.jpg"
   },
   {
-    "title": "Swedish Fishing",
-    "author": "Rachel L",
-    "category": "Leisure",
-    "hero": "autumnclouds.jpg"
-  },
-  {
-    "title": "The Adventure Begins",
-    "hero": "snowcup.jpg",
-    "prominent": true
+    "title": "Moroccan Days",
+    "author": "John L",
+    "category": "Travel",
+    "hero": "escape.jpg"
   },
   {
     "title": "Paris in Spring",
     "author": "John L",
     "category": "Travel",
-    "hero": "christmas.jpg"
+    "hero": "heron/little.jpg"
   },
   {
-    "title": "Youthful Independence",
+    "title": "The Adventure Begins",
     "author": "Rachel L",
-    "category": "Political",
-    "hero": "july4.jpg"
+    "category": "Leisure",
+    "hero": "heron/hbReal.jpg"
   },
+ 
+
   {
     "title": "Trial By Fire",
     "author": "Anthony R",
     "category": "Cooking",
-    "hero": "firepots.jpg"
+    "hero": "heron/w1.jpg"
   },
   {
     "title": "Water Ventures",
     "author": "Rachel L",
     "category": "Leisure",
-    "hero": "jellyfish.jpg"
-  },
-  {
-    "title": "Mt. Zekial",
-    "author": "Rachel L",
-    "category": "Travel",
-    "hero": "mountaincabin.jpg"
-  },
-  {
-    "title": "Cozumel Caves",
-    "author": "Rachel L",
-    "category": "Travel",
-    "hero": "lightcave.jpg"
+    "hero": "loggy.jpg"
   },
   {
     "title": "Amazing Ireland",
     "author": "Rachel L",
     "category": "Travel",
-    "hero": "greengrass.jpg"
+    "hero": "splish.jpg"
+  },
+  {
+    "title": "Cozumel Caves",
+    "author": "Rachel L",
+    "category": "Travel",
+    "hero": "heron/largeMurmer.jpg"
   },
   {
     "title": "Cabin Fever",
     "author": "Rachel L",
     "category": "Travel",
-    "hero": "snowcabin.jpg"
+    "hero": "heron/best2.jpg"
+  },
+  {
+    "title": "Amazing Ireland",
+    "prominent": true,
+    "hero": "heron/uno2.jpg"
+  },
+  
+  {
+    "title": "Cabin Fever",
+    "author": "Rachel L",
+    "category": "Travel",
+    "hero": "sealionReverse.jpg"
+  },
+  {
+    "title": "Cabin Fever",
+    "author": "Rachel L",
+    "category": "Travel",
+    "hero": "snow/logo.jpg"
+  },
+  {
+    "title": "Moroccan Days",
+    "author": "John L",
+    "category": "Travel",
+    "hero": "snow/wallo.jpg"
+  },
+  {
+    "title": "Swedish Fishing",
+    "author": "Rachel L",
+    "category": "Leisure",
+    "hero": "red2.jpg"
+  },
+  {
+    "title": "The Adventure Begins",
+    "author": "John L",
+    "category": "Travel",
+    "hero": "red1.jpg"
+    
+  },
+  {
+    "title": "Paris in Spring",
+    "author": "John L",
+    "category": "Travel",
+    "hero": "red3.jpg"
+  },
+  {
+    "title": "Youthful Independence",
+    "author": "Rachel L",
+    "category": "Political",
+    "hero": "heron/down.jpg"
+  },
+  {
+    "title": "Trial By Fire",
+    "author": "Anthony R",
+    "category": "Cooking",
+    "hero": "waterRocks.jpg"
+  },
+  {
+    "title": "Water Ventures",
+    "author": "Rachel L",
+    "category": "Leisure",
+    "hero": "otter.jpg"
+  },
+  {
+    "title": "Mt. Zekial",
+    "author": "Rachel L",
+    "category": "Travel",
+    "hero": "fly.jpg"
+  },
+  {
+    "title": "Cozumel Caves",
+    "author": "Rachel L",
+    "category": "Travel",
+    "hero": "tallClam.jpg"
+  },
+  {
+    "title": "Amazing Ireland",
+    "author": "Rachel L",
+    "category": "Travel",
+    "hero": "tall2.jpg"
   }
 ]

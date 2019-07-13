@@ -6,7 +6,8 @@
       extended
       flat
       height="75px"
-    :style="{'background-image': 'url(' + banner + ')'}"
+    :style="{'background-image': 'linear-gradient(rgba(255, 255, 255, 0), rgba(4, 4, 4, 0.54)),'+'url(' + banner + ')'}"
+    
     >
     </v-toolbar>
 <!-- EXTRA PADDING v pb-2   -->
@@ -116,6 +117,8 @@ li{
 .tool{
    background-size: cover;
    background-position: bottom;
+  //  background-image:
+// linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73))
 }
 .v-btn--active{
     background-color:rgba(255, 255, 255, 0.2) !important;

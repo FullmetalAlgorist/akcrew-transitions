@@ -12,8 +12,9 @@
       <v-img
         :src="require(`@/assets/articles/${value.hero}`)"
         height="100%"
-        gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
+        gradient="rgba(0, 0, 0, .4), rgba(0, 0, 0, 0)"
       >
+      <!-- ^this gradient opacity (both but second seemed to have the effect) was at like .41 for some reason -->
         <v-layout
           v-if="!value.prominent"
           fill-height
