@@ -1,26 +1,26 @@
 [
   {
-    "title": "Blue Heron in action",
-    "author": "Mariah",
-    "category": "Wildlife",
+    "title": "Xanthoria Parietina",
+    "author": "Bainbridge Island WA",
+    "category": "Nature",
     "hero": "lichen.jpg"
   },
   {
-    "title": "Moroccan Days",
-    "author": "John L",
-    "category": "Travel",
+    "title": "Storm Swell",
+    "author": "Mariah",
+    "category": "Ocean",
     "hero": "maybe.jpg"
   },
   {
-    "title": "Moroccan Days",
+    "title": "Escape",
     "author": "John L",
     "category": "Travel",
     "hero": "escape.jpg"
   },
   {
-    "title": "Paris in Spring",
-    "author": "John L",
-    "category": "Travel",
+    "title": "Townsend's Chipmunk",
+    "author": "Mariah",
+    "category": "Wildlife",
     "hero": "heron/little.jpg"
   },
   {
@@ -38,106 +38,105 @@
     "hero": "heron/w1.jpg"
   },
   {
-    "title": "Water Ventures",
+    "title": "Dendrochronology",
     "author": "Rachel L",
     "category": "Leisure",
     "hero": "loggy.jpg"
   },
   {
-    "title": "Amazing Ireland",
+    "title": "Seaweed Splash",
     "author": "Rachel L",
     "category": "Travel",
     "hero": "splish.jpg"
   },
   {
-    "title": "Cozumel Caves",
+    "title": "Murmuration",
     "author": "Rachel L",
     "category": "Travel",
     "hero": "heron/largeMurmer.jpg"
   },
   {
-    "title": "Cabin Fever",
+    "title": "Great Blue Heron",
     "author": "Rachel L",
     "category": "Travel",
     "hero": "heron/best2.jpg"
   },
   {
-    "title": "Amazing Ireland",
+    "title": "Heron2",
     "prominent": true,
     "hero": "heron/uno2.jpg"
   },
   
   {
-    "title": "Cabin Fever",
+    "title": "Steller Sea Lion",
     "author": "Rachel L",
     "category": "Travel",
     "hero": "sealionReverse.jpg"
   },
   {
-    "title": "Cabin Fever",
-    "author": "Rachel L",
-    "category": "Travel",
+    "title": "Snow Day",
+    "author": "Bainbridge Island",
+    "category": "Nature",
     "hero": "snow/logo.jpg"
   },
   {
-    "title": "Moroccan Days",
-    "author": "John L",
-    "category": "Travel",
+    "title": "Snow2",
+    "prominent": true,
     "hero": "snow/wallo.jpg"
   },
   {
-    "title": "Swedish Fishing",
-    "author": "Rachel L",
-    "category": "Leisure",
+    "title": "Mt Baker",
+    "author": "Mariah",
+    "category": "Nature",
     "hero": "red2.jpg"
   },
   {
-    "title": "The Adventure Begins",
-    "author": "John L",
-    "category": "Travel",
+    "title": "Bechcombing",
+    "author": "Mariah",
+    "category": "Nature",
     "hero": "red1.jpg"
     
   },
   {
-    "title": "Paris in Spring",
-    "author": "John L",
-    "category": "Travel",
+    "title": "Rouge Wave",
+    "author": "Mariah",
+    "category": "Nature",
     "hero": "red3.jpg"
   },
   {
-    "title": "Youthful Independence",
-    "author": "Rachel L",
-    "category": "Political",
+    "title": "Driftwood",
+    "author": "Bainbridge Island",
+    "category": "Nature",
     "hero": "heron/down.jpg"
   },
   {
-    "title": "Trial By Fire",
+    "title": "Saturated Limestone",
     "author": "Anthony R",
     "category": "Cooking",
     "hero": "waterRocks.jpg"
   },
   {
-    "title": "Water Ventures",
-    "author": "Rachel L",
-    "category": "Leisure",
+    "title": "Lutra canadensis",
+    "author": "Bainbridge Island",
+    "category": "Wildlife",
     "hero": "otter.jpg"
   },
   {
-    "title": "Mt. Zekial",
-    "author": "Rachel L",
-    "category": "Travel",
+    "title": "Western Sandpiper",
+    "author": "Mariah",
+    "category": "Wildlife",
     "hero": "fly.jpg"
   },
   {
-    "title": "Cozumel Caves",
-    "author": "Rachel L",
-    "category": "Travel",
+    "title": "Butter Clam",
+    "author": "Mariah",
+    "category": "Nature",
     "hero": "tallClam.jpg"
   },
   {
-    "title": "Amazing Ireland",
-    "author": "Rachel L",
-    "category": "Travel",
+    "title": "Moonrise",
+    "author": "Mariah",
+    "category": "Nature",
     "hero": "tall2.jpg"
   }
 ]

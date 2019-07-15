@@ -4,9 +4,9 @@
     class="blog"
   >
     <v-layout wrap>
-      <v-flex xs12>
+      <!-- <v-flex xs12>
         <slot />
-      </v-flex>
+      </v-flex> -->
 
       <feed-card
         v-for="(article, i) in paginatedArticles"
@@ -25,7 +25,7 @@
           square
           @click="page--"
         >
-          <v-icon>arrow_backward_ios</v-icon>
+          <v-icon>arrow_back_ios</v-icon>
         </base-btn>
       </v-flex>
 
@@ -75,26 +75,35 @@
     computed: {
       ...mapState(['articles']),
       pages () {
+        console.log('articles.length: ',this.articles.length); //23
+        console.log('articles.length / 9: ',this.articles.length / 9); //2.55
+        console.log('ceil of the^: ',Math.ceil(this.articles.length / 9)); //3
+        
         return Math.ceil(this.articles.length / 9)
       },
       paginatedArticles () {
+       
+        
         const start = (this.page - 1) * 9
+         console.log('start: ', start);
         const stop = this.page * 9
-
+console.log('stop: ', stop);
         return this.articles.slice(start, stop)
       }
     },
 
     watch: {
       page () {
+        console.log('page',this.page);
+        console.log('pages', this.pages);
         window.scrollTo(0, 0)
       }
     }
   }
 </script>
 <style lang="scss" scoped>
-.blog{
-  margin-top: -100px;
-}
+// .blog{
+//   margin-top: -100px;
+// }
 </style>
 
