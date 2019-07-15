@@ -1,65 +1,75 @@
 [
   {
     "title": "Xanthoria Parietina",
-    "author": "Bainbridge Island WA",
+    "author": "Bainbridge Island, WA",
     "category": "Nature",
-    "hero": "lichen.jpg"
+    "hero": "lichen.jpg",
+    "date": "Fall 2018"
   },
   {
     "title": "Storm Swell",
-    "author": "Mariah",
+    "author": "Mariah V",
     "category": "Ocean",
-    "hero": "maybe.jpg"
+    "hero": "maybe.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Escape",
-    "author": "John L",
+    "author": "Mariah V",
     "category": "Travel",
-    "hero": "escape.jpg"
+    "hero": "escape.jpg",
+    "date": "Spring 2019"
   },
   {
     "title": "Townsend's Chipmunk",
-    "author": "Mariah",
+    "author": "Mariah V",
     "category": "Wildlife",
-    "hero": "heron/little.jpg"
+    "hero": "heron/little.jpg",
+    "date": "Spring 2019"
   },
   {
-    "title": "The Adventure Begins",
-    "author": "Rachel L",
-    "category": "Leisure",
-    "hero": "heron/hbReal.jpg"
+    "title": "Flight of the hummingbird",
+    "author": "Bainbridge Island, WA",
+    "category": "Wildlife",
+    "hero": "heron/hbReal.jpg",
+    "date": "Spring 2019"
   },
  
 
   {
-    "title": "Trial By Fire",
-    "author": "Anthony R",
-    "category": "Cooking",
-    "hero": "heron/w1.jpg"
+    "title": "Low Tide",
+    "author": "Mariah V",
+    "category": "Nature",
+    "hero": "heron/w1.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Dendrochronology",
-    "author": "Rachel L",
-    "category": "Leisure",
-    "hero": "loggy.jpg"
+    "author": "Mariah V",
+    "category": "Driftwood",
+    "hero": "loggy.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Seaweed Splash",
-    "author": "Rachel L",
-    "category": "Travel",
-    "hero": "splish.jpg"
+    "author": "Mariah V",
+    "category": "Ocean",
+    "hero": "splish.jpg",
+    "date": "Summer 2019"
   },
   {
     "title": "Murmuration",
-    "author": "Rachel L",
-    "category": "Travel",
-    "hero": "heron/largeMurmer.jpg"
+    "author": "Mariah V",
+    "category": "Wildlife",
+    "hero": "heron/largeMurmer.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Great Blue Heron",
-    "author": "Rachel L",
-    "category": "Travel",
-    "hero": "heron/best2.jpg"
+    "author": "Bainbridge Island, WA",
+    "category": "Wildlife",
+    "hero": "heron/best2.jpg",
+    "date": "Spring  2019"
   },
   {
     "title": "Heron2",
@@ -68,16 +78,18 @@
   },
   
   {
-    "title": "Steller Sea Lion",
-    "author": "Rachel L",
-    "category": "Travel",
-    "hero": "sealionReverse.jpg"
+    "title": "Steller Sea Lions",
+    "author": "Bainbridge Island, WA",
+    "category": "Wildlife",
+    "hero": "sealionReverse.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Snow Day",
-    "author": "Bainbridge Island",
-    "category": "Nature",
-    "hero": "snow/logo.jpg"
+    "author": "Mariah V",
+    "category": "Driftwood",
+    "hero": "snow/logo.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Snow2",
@@ -86,57 +98,65 @@
   },
   {
     "title": "Mt Baker",
-    "author": "Mariah",
+    "author": "Mariah V",
     "category": "Nature",
-    "hero": "red2.jpg"
+    "hero": "red2.jpg",
+    "date": "Winter 2018"
   },
   {
-    "title": "Bechcombing",
-    "author": "Mariah",
-    "category": "Nature",
-    "hero": "red1.jpg"
-    
+    "title": "Beachcombing",
+    "author": "Bainbridge Island, WA",
+    "category": "Driftwood",
+    "hero": "red1.jpg",
+    "date": "Fall 2018"
   },
   {
     "title": "Rouge Wave",
-    "author": "Mariah",
-    "category": "Nature",
-    "hero": "red3.jpg"
+    "author": "Mariah V",
+    "category": "Ocean",
+    "hero": "red3.jpg",
+    "date": "Fall 2018"
   },
   {
-    "title": "Driftwood",
-    "author": "Bainbridge Island",
-    "category": "Nature",
-    "hero": "heron/down.jpg"
+    "title": "White Sand Beach",
+    "author": "Bainbridge Island, WA",
+    "category": "Driftwood",
+    "hero": "heron/down.jpg",
+    "date": "Spring 2019"
   },
   {
     "title": "Saturated Limestone",
-    "author": "Anthony R",
-    "category": "Cooking",
-    "hero": "waterRocks.jpg"
+    "author": "Bainbridge Island, WA",
+    "category": "Nature",
+    "hero": "waterRocks.jpg",
+    "date": "Fall 2018"
   },
   {
     "title": "Lutra canadensis",
-    "author": "Bainbridge Island",
+    "author": "Bainbridge Island, WA",
     "category": "Wildlife",
-    "hero": "otter.jpg"
+    "hero": "otter.jpg",
+    "date": "Spring 2019"
   },
   {
     "title": "Western Sandpiper",
-    "author": "Mariah",
+    "author": "Mariah V",
     "category": "Wildlife",
-    "hero": "fly.jpg"
+    "hero": "fly.jpg",
+    "date": "Fall 2018"
   },
   {
     "title": "Butter Clam",
-    "author": "Mariah",
+    "author": "Mariah V",
     "category": "Nature",
-    "hero": "tallClam.jpg"
+    "hero": "tallClam.jpg",
+    "date": "Winter 2018"
   },
   {
     "title": "Moonrise",
-    "author": "Mariah",
+    "author": "Bainbridge Island, WA",
     "category": "Nature",
-    "hero": "tall2.jpg"
+    "hero": "tall2.jpg",
+    "date": "Fall 2018"
   }
 ]
