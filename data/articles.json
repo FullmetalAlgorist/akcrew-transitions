@@ -4,19 +4,21 @@
     "author": "Bainbridge Island, WA",
     "category": "Nature",
     "hero": "lichen.jpg",
-    "date": "Fall 2018"
+    "date": "Fall 2018",
+    "h": 280
   },
   {
     "title": "Storm Swell",
     "author": "Mariah V",
     "category": "Ocean",
     "hero": "maybe.jpg",
-    "date": "Winter 2018"
+    "date": "Winter 2018",
+    "h": 280
   },
   {
     "title": "Escape",
     "author": "Mariah V",
-    "category": "Travel",
+    "category": "Wildlife",
     "hero": "escape.jpg",
     "date": "Spring 2019"
   },
@@ -25,14 +27,16 @@
     "author": "Mariah V",
     "category": "Wildlife",
     "hero": "heron/little.jpg",
-    "date": "Spring 2019"
+    "date": "Spring 2019",
+    "h": 325
   },
   {
     "title": "Flight of the hummingbird",
     "author": "Bainbridge Island, WA",
     "category": "Wildlife",
     "hero": "heron/hbReal.jpg",
-    "date": "Spring 2019"
+    "date": "Spring 2019",
+    "h": 325
   },
  
 
@@ -41,21 +45,24 @@
     "author": "Mariah V",
     "category": "Nature",
     "hero": "heron/w1.jpg",
-    "date": "Winter 2018"
+    "date": "Winter 2018",
+    "h": 200
   },
   {
     "title": "Dendrochronology",
     "author": "Mariah V",
     "category": "Driftwood",
     "hero": "loggy.jpg",
-    "date": "Winter 2018"
+    "date": "Winter 2018",
+    "h": 200
   },
   {
     "title": "Seaweed Splash",
     "author": "Mariah V",
     "category": "Ocean",
     "hero": "splish.jpg",
-    "date": "Summer 2019"
+    "date": "Summer 2019",
+    "h": 200
   },
   {
     "title": "Murmuration",
@@ -69,12 +76,14 @@
     "author": "Bainbridge Island, WA",
     "category": "Wildlife",
     "hero": "heron/best2.jpg",
-    "date": "Spring  2019"
+    "date": "Spring  2019",
+    "h": 450
   },
   {
     "title": "Heron2",
     "prominent": true,
-    "hero": "heron/uno2.jpg"
+    "hero": "heron/uno2.jpg",
+    "h": 450
   },
   
   {
@@ -89,33 +98,38 @@
     "author": "Mariah V",
     "category": "Driftwood",
     "hero": "snow/logo.jpg",
-    "date": "Winter 2018"
+    "date": "Winter 2018",
+    "h": 300
   },
   {
     "title": "Snow2",
     "prominent": true,
-    "hero": "snow/wallo.jpg"
+    "hero": "snow/wallo.jpg",
+    "h": 300
   },
   {
     "title": "Mt Baker",
     "author": "Mariah V",
     "category": "Nature",
     "hero": "red2.jpg",
-    "date": "Winter 2018"
+    "date": "Winter 2018",
+    "h": 200
   },
   {
     "title": "Beachcombing",
     "author": "Bainbridge Island, WA",
     "category": "Driftwood",
     "hero": "red1.jpg",
-    "date": "Fall 2018"
+    "date": "Fall 2018",
+    "h": 200
   },
   {
     "title": "Rouge Wave",
     "author": "Mariah V",
     "category": "Ocean",
     "hero": "red3.jpg",
-    "date": "Fall 2018"
+    "date": "Fall 2018",
+    "h": 200
   },
   {
     "title": "White Sand Beach",
@@ -129,14 +143,16 @@
     "author": "Bainbridge Island, WA",
     "category": "Nature",
     "hero": "waterRocks.jpg",
-    "date": "Fall 2018"
+    "date": "Fall 2018",
+    "h": 276
   },
   {
     "title": "Lutra canadensis",
     "author": "Bainbridge Island, WA",
     "category": "Wildlife",
     "hero": "otter.jpg",
-    "date": "Spring 2019"
+    "date": "Spring 2019",
+    "h": 276
   },
   {
     "title": "Western Sandpiper",
@@ -150,13 +166,15 @@
     "author": "Mariah V",
     "category": "Nature",
     "hero": "tallClam.jpg",
-    "date": "Winter 2018"
+    "date": "Winter 2018",
+    "h": 621
   },
   {
     "title": "Moonrise",
     "author": "Bainbridge Island, WA",
     "category": "Nature",
     "hero": "tall2.jpg",
-    "date": "Fall 2018"
+    "date": "Fall 2018",
+    "h": 621
   }
 ]

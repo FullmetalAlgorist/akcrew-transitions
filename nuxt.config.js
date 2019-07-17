@@ -1,5 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
+
 export default {
   mode: 'universal',
   /*
@@ -33,6 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    './plugins/base'
   ],
   /*
   ** Nuxt.js modules
@@ -46,7 +48,7 @@ export default {
   */
   vuetify: {
     theme: {
-      primary: colors.blue.darken2,
+      primary: 'rgba(255, 255, 255, .49)',
       accent: colors.grey.darken3,
       secondary: colors.amber.darken3,
       info: colors.teal.lighten1,

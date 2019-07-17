@@ -4,10 +4,11 @@
     :class="classes"
   >
     <base-card
-      :height="value.prominent ? 450 : 350"
+   :height="`${$vuetify.breakpoint.lgAndUp ? value.h : '100%'}`"
       color="grey lighten-1"
       dark
       href="#!"
+
     >
       <v-img
         :src="require(`@/assets/articles/${value.hero}`)"
@@ -21,8 +22,9 @@
           wrap
           text-xs-right
           ma-0
+          
         >
-          <v-flex xs12>
+          <v-flex xs12 :class="`S${eyeD === 0 ? 'smll' : 'nope'}`">
             <v-chip
               label
               class="mx-0 mb-2 text-uppercase"
@@ -47,6 +49,7 @@
               label
               small
               @click.stop=""
+              text-color="black"
             >
               Read More
             </v-chip>
@@ -67,6 +70,10 @@
       value: {
         type: Object,
         default: () => ({})
+      },
+      eyeD: {
+        type: Number,
+        required: true
       }
     },
 
@@ -77,6 +84,9 @@
           'md4': this.size === 3
         }
       }
+    },
+    created(){
+      console.log(this.value.hero);
     }
   }
 </script>
@@ -84,5 +94,15 @@
 <style>
 .v-image__image {
   transition: .3s linear;
+}
+
+.Smedi{
+   margin-top: 10px;
+}
+.Ssmll{
+  margin-top: 35px;
+}
+.Snope{
+  margin-top: 0px;
 }
 </style>

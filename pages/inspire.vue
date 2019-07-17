@@ -1,7 +1,7 @@
 <template>
   <v-container
     grid-list-xl
-    class="blog"
+   :class="`S${$vuetify.breakpoint.mdAndUp ? 'medi' : 'smll'}`"
   >
     <v-layout wrap>
       <!-- <v-flex xs12>
@@ -13,6 +13,7 @@
         :key="article.title"
         :size="layout[i]"
         :value="article"
+        :eyeD="i"
       />
     </v-layout>
 
@@ -78,9 +79,7 @@
         return Math.ceil(this.articles.length / 9)
       },
       paginatedArticles () {
-       
-        
-        const start = (this.page - 1) * 9
+       const start = (this.page - 1) * 9
         const stop = this.page * 9
         return this.articles.slice(start, stop)
       }
@@ -94,8 +93,11 @@
   }
 </script>
 <style lang="scss" scoped>
-.blog{
-  margin-top: -50px;
+.Smedi{
+   margin-top: -100px;
+}
+.Ssmll{
+  margin-top: -80px;
 }
 </style>
 
