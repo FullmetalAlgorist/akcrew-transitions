@@ -42,7 +42,7 @@
               {{ value.author }}<br> {{ value.date }}
             </div>
           </v-flex>
-          <v-flex align-self-end>
+          <!-- <v-flex align-self-end>
             <v-chip
               class="text-uppercase ma-0"
               color="primary"
@@ -53,7 +53,7 @@
             >
               Read More
             </v-chip>
-          </v-flex>
+          </v-flex> -->
         </v-layout>
       </v-img>
     </base-card>
