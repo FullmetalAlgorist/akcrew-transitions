@@ -1,6 +1,6 @@
 <template>
   <div class="parallax">
-    <v-content>
+    <v-content  :class="`S${$vuetify.breakpoint.mdAndUp ? 'medi' : 'smll'}`">
       <section>
         <v-parallax :src="require('@/assets/two.png')" height="500">
           <v-layout
@@ -187,7 +187,12 @@
 }
 
 
-
+.Smedi{
+   margin-top: -8px;
+}
+.Ssmll{
+  margin-top: -51px;
+}
 
 
 
