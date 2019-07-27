@@ -2,7 +2,7 @@
   <div class="parallax">
     <v-content  :class="`S${$vuetify.breakpoint.mdAndUp ? 'medi' : 'smll'}`">
       <section>
-        <v-parallax :src="require('@/assets/two.png')" height="500">
+        <v-parallax src="https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/super/two.png" height="500">
           <v-layout
             column
             align-center
@@ -63,7 +63,7 @@
         </v-layout>
       </section>
 
-<parallaxx :srrc="require('@/assets/one.png')"></parallaxx>
+<parallaxx srrc="https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/super/one.png"></parallaxx>
       <!-- <section>
         <v-parallax class="lines" :src="require('@/assets/three6.png')" height="400">
           <v-layout column align-end justify-center >
@@ -120,7 +120,7 @@
       </section>
 
 <div v-for="(text, index) in texts" :key="text.id">
-<parallaxx :srrc="require('@/assets/'+(index+3)+'.png')"></parallaxx>
+<parallaxx :srrc="`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/super/` +(index+3)+ `.png`"></parallaxx>
 <parallaxx-text 
   :title="text.title" 
   :text1="text.text1" 
@@ -154,10 +154,14 @@
       med(){
         return this.$vuetify.breakpoint.mdAndUp;
       },
+      // source(){
+      //   return 
+      // },
       ...mapState(['texts']),
     },
     data: () => ({
-      imagine: '@/assets/gallery/IMG_5992.jpg',
+      // imagine: '@/assets/gallery/IMG_5992.jpg',
+
       superImages: [
 
       ]
@@ -185,7 +189,6 @@
  /* margin-bottom: 80px; */
  margin-top: 76px;
 }
-
 
 .Smedi{
    margin-top: -8px;

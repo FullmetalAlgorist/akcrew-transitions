@@ -11,7 +11,7 @@
 
     >
       <v-img
-        :src="require(`@/assets/articles/${value.hero}`)"
+        :src="`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/`+value.hero"
         height="100%"
         gradient="rgba(0, 0, 0, .4), rgba(0, 0, 0, 0)"
       >

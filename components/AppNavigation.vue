@@ -59,11 +59,11 @@ return {
     if(this.page === 'inspire')
     {
       this.toType='Welcome to my simple photo blog!';
-      return require('@/assets/rocks.jpg')
+      return 'https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/rocks.jpg'
     }
     else{
       this.toType= 'Scroll down to see parallax effect :)';
-      return require('@/assets/trianglifyLarge.png')
+      return 'https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/trianglifyLarge.png'
     }
   }
   },
