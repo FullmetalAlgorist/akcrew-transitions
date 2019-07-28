@@ -7,7 +7,6 @@
       flat
       height="75px"
     :style="{'background-image': 'linear-gradient(rgba(255, 255, 255, 0), rgba(4, 4, 4, 0.54)),'+'url(' + banner + ')'}"
-    
     >
     </v-toolbar>
 <!-- EXTRA PADDING v pb-2   -->
@@ -26,14 +25,9 @@
       <v-btn to="/inspire" tag="li" large outline color="white">blog</v-btn>
     </ul>
             </v-toolbar-title>
-
-            <!-- <v-spacer></v-spacer> -->
           </v-toolbar>
-
           <v-divider></v-divider>
-
           <v-card-text class="type" >
-         
        <vue-typer erase-style='backspace' :text="toType"></vue-typer>
           </v-card-text>
         </v-card>

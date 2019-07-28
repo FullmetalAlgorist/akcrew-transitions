@@ -15,6 +15,8 @@
         :value="article"
         :eyeD="i"
       />
+    
+      <!--  @click="showLightbox(`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/`+article.hero)" -->
     </v-layout>
 
     <v-layout align-center>
@@ -53,20 +55,24 @@
         </base-btn>
       </v-flex>
     </v-layout>
+   
   </v-container>
 </template>
 
 <script>
   // Utilities
+
   import {
     mapState
   } from 'vuex'
+
 
   export default {
     name: 'Feed',
 
     components: {
-      FeedCard: () => import('@/components/FeedCard')
+      FeedCard: () => import('@/components/FeedCard'),
+   
     },
 
     data: () => ({
@@ -84,7 +90,8 @@
         return this.articles.slice(start, stop)
       }
     },
-
+methods: {
+},
     watch: {
       page () {
         window.scrollTo(0, 0)
@@ -99,5 +106,8 @@
 .Ssmll{
   margin-top: -80px;
 }
+// .lightMeUp{
+//   position: absolute;
+// }
 </style>
 

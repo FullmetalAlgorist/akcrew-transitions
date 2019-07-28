@@ -34,7 +34,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    './plugins/base'
+    './plugins/base',
+    '~/plugins/lightGallery.client.js'
   ],
   /*
   ** Nuxt.js modules

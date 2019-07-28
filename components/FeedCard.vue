@@ -10,6 +10,10 @@
       href="#!"
 
     >
+    
+      <no-ssr>
+
+   <silentbox-single :src="`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/`+value.hero">
       <v-img
         :src="`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/`+value.hero"
         height="100%"
@@ -56,12 +60,20 @@
           </v-flex> -->
         </v-layout>
       </v-img>
+      </silentbox-single>
+       </no-ssr>
     </base-card>
   </v-flex>
 </template>
 
 <script>
   export default {
+    data (){
+return{
+  light: true,
+      showLight: 'https://images.unsplash.com/photo-1416138645715-930585fe4ce2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60'
+}
+    },
     props: {
       size: {
         type: Number,
