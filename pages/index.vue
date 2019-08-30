@@ -11,7 +11,7 @@
               <v-btn
               class="hell op"
               light
-              small
+              large
               fab
             >
             </v-btn>
@@ -177,7 +177,9 @@
 }
 .hell{
     /* margin-top: 70px; */
+    
     margin-bottom: 20px;
+    background-image: linear-gradient(-225deg, #455499 0%, #422247 29%, #de3430 67%, #f9cb45 100%);
 }
 .avatar{
   background-color: black;
