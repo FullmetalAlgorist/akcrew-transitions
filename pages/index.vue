@@ -17,7 +17,7 @@
             </v-btn>
             <!-- <img src="@/assets/logos/bierebw.png" alt="Vuetify.js" height="200"> -->
           <div >
-            <h1 class="white--text mb-2 display-1 text-xs-center">Oh hello</h1>
+            <h1 class="white--text mb-2 display-1 text-xs-center hello">Oh hello</h1>
             <div class="subheading mb-3 text-xs-center">welcome</div>
           </div>
           </v-layout>
@@ -196,7 +196,12 @@
 .Ssmll{
   margin-top: -51px;
 }
-
+.hello{
+  font-family: 'Special Elite', cursive !important;
+/* font-family: 'Monoton', cursive !important; */
+/* font-family: 'Mountains of Christmas', cursive !important; */
+/* font-family: 'ZCOOL KuaiLe', cursive !important; */
+}
 
 
 /* top: 11%;

@@ -44,7 +44,7 @@ if (process.browser) {
 export default {
   data(){
 return {
-  toType: 'Scroll down to see parallax effect :)'
+  toType: 'Scroll down for parallax effect :)'
 }
   },
   computed: {
@@ -56,7 +56,7 @@ return {
       return 'https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/rocks.jpg'
     }
     else{
-      this.toType= 'Scroll down to see parallax effect :)';
+      this.toType= 'Scroll for parallax effect     :)';
       return 'https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/trianglifyLarge.png'
     }
   }
@@ -134,7 +134,10 @@ ul {
 }
 .vue-typer {
   // font-weight: bold;
+   font-family: 'Special Elite', cursive !important;
   font-size: 130%;
 }
-
+.v-card__text{
+  padding: 3px;
+}
 </style>

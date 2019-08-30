@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}]},
+          'https://fonts.googleapis.com/css?family=Monoton|Mountains+of+Christmas|Special+Elite|ZCOOL+KuaiLe|Roboto:300,400,500,700|Material+Icons'}]},
   /*
   ** Customize the progress-bar color
   */
