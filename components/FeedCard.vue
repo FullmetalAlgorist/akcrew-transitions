@@ -7,10 +7,10 @@
    :height="`${$vuetify.breakpoint.lgAndUp ? value.h : '100%'}`"
       color="grey lighten-1"
       dark
-      href="#!"
-
+     
+      
     >
-    
+     <!-- href="#!" -->
       <no-ssr>
 
    <silentbox-single :src="`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/`+value.hero">
@@ -35,7 +35,7 @@
               color="grey darken-3"
               text-color="white"
               small
-              @click.stop=""
+              
             >
               {{ value.category }}
             </v-chip>
@@ -46,19 +46,20 @@
               {{ value.author }}<br> {{ value.date }}
             </div>
           </v-flex>
-          <!-- <v-flex align-self-end>
+          <v-flex align-self-end>
             <v-chip
               class="text-uppercase ma-0"
               color="primary"
               label
               small
-              @click.stop=""
-              text-color="black"
+              
+             
             >
-              Read More
+              Full Image
             </v-chip>
-          </v-flex> -->
+          </v-flex>
         </v-layout>
+ 
       </v-img>
       </silentbox-single>
        </no-ssr>
@@ -67,12 +68,17 @@
 </template>
 
 <script>
+//  import FingerprintSpinner from 'epic-spinners'
+  
   export default {
     data (){
 return{
   light: true,
       showLight: 'https://images.unsplash.com/photo-1416138645715-930585fe4ce2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60'
 }
+    },
+    components: {
+      // FingerprintSpinner
     },
     props: {
       size: {
@@ -98,7 +104,7 @@ return{
       }
     },
     created(){
-      console.log(this.value.hero);
+      // console.log(this.value.hero);
     }
   }
 </script>
@@ -116,5 +122,8 @@ return{
 }
 .Snope{
   margin-top: 0px;
+}
+.silentbox-single{
+  text-decoration: none !important;
 }
 </style>

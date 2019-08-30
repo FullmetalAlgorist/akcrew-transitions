@@ -35,7 +35,8 @@ export default {
   */
   plugins: [
     './plugins/base',
-    '~/plugins/lightGallery.client.js'
+    '~/plugins/lightGallery.client.js',
+    '~/plugins/spinner.client.js'
   ],
   /*
   ** Nuxt.js modules
@@ -49,7 +50,7 @@ export default {
   */
   vuetify: {
     theme: {
-      primary: 'rgba(255, 255, 255, .49)',
+      primary: '#303030',
       accent: colors.grey.darken3,
       secondary: colors.amber.darken3,
       info: colors.teal.lighten1,

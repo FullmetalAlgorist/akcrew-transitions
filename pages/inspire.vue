@@ -15,7 +15,7 @@
         :value="article"
         :eyeD="i"
       />
-    
+
       <!--  @click="showLightbox(`https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/`+article.hero)" -->
     </v-layout>
 
@@ -23,7 +23,7 @@
       <v-flex xs3>
         <base-btn
           v-if="page !== 1"
-          class="ml-0"
+          class="ml-0 but"
           title="Previous page"
           square
           @click="page--"
@@ -46,7 +46,7 @@
       >
         <base-btn
           v-if="pages > 1 && page < pages"
-          class="mr-0"
+          class="mr-0 but"
           title="Next page"
           square
           @click="page++"
@@ -106,8 +106,13 @@ methods: {
 .Ssmll{
   margin-top: -80px;
 }
-// .lightMeUp{
-//   position: absolute;
+.but{
+  border-radius: 50% !important;
+box-shadow: 0px 3px 5px -1px rgba(247, 240, 240, 0.2), 0px 6px 10px 0px rgba(236, 235, 235, 0.14), 0px 1px 18px 0px rgba(255, 255, 255, 0.12) !important;
+}
+// .v-btn--floating:not(.v-btn--depressed):not(.v-btn--flat) {
+//     box-shadow: 0px 3px 5px -1px rgba(247, 240, 240, 0.2), 0px 6px 10px 0px rgba(236, 235, 235, 0.14), 0px 1px 18px 0px rgba(255, 255, 255, 0.12);
 // }
 </style>
+
 
