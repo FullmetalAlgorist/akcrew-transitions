@@ -37,13 +37,14 @@ export default {
     './plugins/base',
     '~/plugins/lightGallery.client.js',
     '~/plugins/spinner.client.js',
-     '~/plugins/isMobile.js'
+    // '~/plugins/isMobile.js'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/device'
   ],
   /*
   ** vuetify module configuration
@@ -67,6 +68,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+  //  vendor: ['vue-mobile-detection'],
     extend(config, ctx) {
     }
   }

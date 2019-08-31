@@ -11,6 +11,7 @@
    <!-- <a href="#div-id" v-smooth-scroll="{ duration: 30000, offset: -50 }">Anchor</a>  -->
               
               <v-btn 
+              v-if="mobs"
               class="hell op"
               light
               large
@@ -52,7 +53,8 @@
                   <v-card class="elevation-0 transparent  text-xs-center">
                     <v-card-text class="text-xs-center">
                        <v-flex xs12 > 
-                         <div class="shapeshifter stepUp" :style="{backgroundImage: 'url('+ dude +')'}" :class="$isMobile() ? 'mob1' : 'play2'">  </div></v-flex>
+                         <div class="shapeshifter stepUp" :style="{backgroundImage: 'url('+ dude +')'}" >  </div></v-flex>
+                         <!-- :class="$isMobile() ? 'mob1' : 'play2'" -->
                       
                       <!-- <v-icon x-large class="black--text text--lighten-2">accessibility_new</v-icon> -->
                     </v-card-text>
@@ -115,7 +117,8 @@
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
                       <!-- <v-icon x-large class="black--text text--lighten-2">gesture</v-icon> -->
-                     <div class="shapeshifter step" :style="{backgroundImage: 'url('+ flame +')'}" :class="$isMobile() ? 'mob2' : 'play'">  </div>
+                     <div class="shapeshifter step" :style="{backgroundImage: 'url('+ flame +')'}" >  </div>
+                     <!-- :class="$isMobile() ? 'mob2' : 'play'" -->
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Completely Open Sourced</div>
@@ -150,11 +153,17 @@
 </template>
 
 <script>
+
   // Utilities
   import {
     mapState
   } from 'vuex'
 
+if (process.browser) {
+
+// let mobs = require('vue-mobile-detection');
+// console.log(context.$isMobile());
+}
   export default {
      components: {
       Parallaxx: () => import('@/components/Parallax'),
@@ -164,12 +173,16 @@
       med(){
         return this.$vuetify.breakpoint.mdAndUp;
       },
+      mobs(){
+        return this.$device.isMobile;
+      },
       // source(){
       //   return 
       // },
       ...mapState(['texts']),
     },
     data: () => ({
+      
       // imagine: '@/assets/gallery/IMG_5992.jpg',
       flame: require('@/static/sprite_60fps.svg'),
     dude: require('@/static/dude_60fps.svg'),

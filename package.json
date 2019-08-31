@@ -12,6 +12,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/device": "^1.2.3",
     "@nuxtjs/vuetify": "0.5.5",
     "epic-spinners": "^1.1.0",
     "nuxt": "^2.0.0",
