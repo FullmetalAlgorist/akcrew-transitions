@@ -15,8 +15,8 @@
     "@nuxtjs/vuetify": "0.5.5",
     "epic-spinners": "^1.1.0",
     "nuxt": "^2.0.0",
+    "vue-mobile-detection": "^1.0.0",
     "vue-silentbox": "^0.1.9",
-    "vue-smooth-scroll": "^1.0.13",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {

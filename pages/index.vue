@@ -8,14 +8,17 @@
             align-center
             justify-center
           > 
-              <v-btn
+   <!-- <a href="#div-id" v-smooth-scroll="{ duration: 30000, offset: -50 }">Anchor</a>  -->
+              
+              <v-btn 
               class="hell op"
               light
               large
               fab
-              to="#div-id"
-              v-smooth-scroll="{ duration: 80000}"
+             
             >
+            <!-- to="#div-id"
+              v-smooth-scroll="{ duration: 30000}" -->
             <v-icon class="down" x-large >arrow_drop_down</v-icon>
             </v-btn>
             <!-- <img src="@/assets/logos/bierebw.png" alt="Vuetify.js" height="200"> -->
@@ -49,7 +52,7 @@
                   <v-card class="elevation-0 transparent  text-xs-center">
                     <v-card-text class="text-xs-center">
                        <v-flex xs12 > 
-                         <div class="shapeshifter play2 stepUp" :style="{backgroundImage: 'url('+ dude +')'}" >  </div></v-flex>
+                         <div class="shapeshifter stepUp" :style="{backgroundImage: 'url('+ dude +')'}" :class="$isMobile() ? 'mob1' : 'play2'">  </div></v-flex>
                       
                       <!-- <v-icon x-large class="black--text text--lighten-2">accessibility_new</v-icon> -->
                     </v-card-text>
@@ -112,7 +115,7 @@
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
                       <!-- <v-icon x-large class="black--text text--lighten-2">gesture</v-icon> -->
-                     <div class="shapeshifter play step" :style="{backgroundImage: 'url('+ flame +')'}" >  </div>
+                     <div class="shapeshifter step" :style="{backgroundImage: 'url('+ flame +')'}" :class="$isMobile() ? 'mob2' : 'play'">  </div>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Completely Open Sourced</div>
@@ -138,9 +141,11 @@
   :ico="text.ico"
   >
 </parallaxx-text>
+
 </div>
+ <div id="div-id"></div>
     </v-content>
-    <div id="div-id"></div>
+   
   </div>
 </template>
 
@@ -247,7 +252,7 @@ font-family: 'ZCOOL KuaiLe', cursive !important;
 .shapeshifter.play:hover  {
   animation-name: play30;
   animation-direction: alternate;
-  animation-iteration-count:2;
+  animation-iteration-count:infinite;
   /* z-index: 10; */
 }
 /* .shapeshifter.play:hover {
@@ -270,7 +275,7 @@ animation-play-state:running;
 .shapeshifter.play2:hover {
   animation-name: play18;
    animation-direction: alternate;
-  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
 }
 .down{
   opacity: 0;
@@ -279,6 +284,17 @@ animation-play-state:running;
 }
 .down:hover{
   opacity: 1;
+}
+.mob1{
+   animation-name: play18;
+   animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
+.mob2{
+     animation-name: play30;
+  animation-direction: alternate;
+  animation-iteration-count:infinite;
 }
 </style>
 

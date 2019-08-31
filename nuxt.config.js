@@ -37,7 +37,7 @@ export default {
     './plugins/base',
     '~/plugins/lightGallery.client.js',
     '~/plugins/spinner.client.js',
-    '~/plugins/scroll.js'
+     '~/plugins/isMobile.js'
   ],
   /*
   ** Nuxt.js modules
