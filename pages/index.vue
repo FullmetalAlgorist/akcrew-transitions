@@ -1,5 +1,5 @@
 <template>
-  <div class="parallax">
+  <div class="parallax" id="scrollDown">
     <v-content  :class="`S${$vuetify.breakpoint.mdAndUp ? 'medi' : 'smll'}`">
       <section>
         <v-parallax src="https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/super/two.png" height="500">
@@ -13,13 +13,16 @@
               light
               large
               fab
+              to="#div-id"
+              v-smooth-scroll="{ duration: 80000}"
             >
+            <v-icon class="down" x-large >arrow_drop_down</v-icon>
             </v-btn>
             <!-- <img src="@/assets/logos/bierebw.png" alt="Vuetify.js" height="200"> -->
-          <div >
+          <!-- <div >
             <h1 class="white--text mb-2 display-1 text-xs-center hello">Oh hello</h1>
-            <div class="subheading mb-3 text-xs-center">welcome</div>
-          </div>
+            <div class="subheading mb-3 text-xs-center hello">welcome</div>
+          </div> -->
           </v-layout>
         </v-parallax>
       </section>
@@ -41,14 +44,19 @@
           </v-flex>
           <v-flex xs12>
             <v-container grid-list-xl>
-              <v-layout row wrap align-center>
+              <v-layout row wrap class="align-center justify-center text-xs-center">
                 <v-flex xs12 >
-                  <v-card class="elevation-0 transparent">
+                  <v-card class="elevation-0 transparent  text-xs-center">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
+                       <v-flex xs12 > 
+                         <div class="shapeshifter play2 stepUp" :style="{backgroundImage: 'url('+ dude +')'}" >  </div></v-flex>
+                      
+                      <!-- <v-icon x-large class="black--text text--lighten-2">accessibility_new</v-icon> -->
                     </v-card-text>
+                    <!-- <div class="shapeshifter play" :style="{backgroundImage: 'url('+ flame +')'}" >  </div> -->
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Imagine this page full of your content!</div>
+                    
                     </v-card-title>
                     <v-card-text>
                       Especially attractive in mobile environments, this could be a starting point for any website need you may have. From stunning personal blogs to eye catching E-commerce stores. The parallax world is your oyster.  Fully customizable and 
@@ -103,7 +111,8 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
+                      <!-- <v-icon x-large class="black--text text--lighten-2">gesture</v-icon> -->
+                     <div class="shapeshifter play step" :style="{backgroundImage: 'url('+ flame +')'}" >  </div>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Completely Open Sourced</div>
@@ -125,17 +134,13 @@
   :title="text.title" 
   :text1="text.text1" 
   :secondTitle="text.secondTitle" 
-  :text2="text.text2">
+  :text2="text.text2"
+  :ico="text.ico"
+  >
 </parallaxx-text>
 </div>
-<!-- 
-<parallaxx :srrc="require('@/assets/four.png')"></parallaxx>
-<parallaxx-text></parallaxx-text>
-<parallaxx :srrc="require('@/assets/five.png')"></parallaxx>
-<parallaxx-text></parallaxx-text>
-<parallaxx :srrc="require('@/assets/six.png')"></parallaxx>
-<parallaxx-text></parallaxx-text> -->
     </v-content>
+    <div id="div-id"></div>
   </div>
 </template>
 
@@ -161,11 +166,17 @@
     },
     data: () => ({
       // imagine: '@/assets/gallery/IMG_5992.jpg',
-
-      superImages: [
-
-      ]
-    })
+      flame: require('@/static/sprite_60fps.svg'),
+    dude: require('@/static/dude_60fps.svg'),
+    // container : this.$refs.scrollDown
+    }),
+    methods: {
+      down(){
+      //  window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
+// let elmnt = document.getElementById('scrollDown');
+// elmnt.scrollIntoView(false);
+      }
+    }
   }
 </script>
 <style lang= "scss" scoped>
@@ -181,6 +192,7 @@
     margin-bottom: 20px;
     background-image: linear-gradient(-225deg, #455499 0%, #422247 29%, #de3430 67%, #f9cb45 100%);
 }
+
 .avatar{
   background-color: black;
 }
@@ -199,18 +211,75 @@
   margin-top: -51px;
 }
 .hello{
-  font-family: 'Special Elite', cursive !important;
+  /* font-family: 'Special Elite', cursive !important; */
 /* font-family: 'Monoton', cursive !important; */
 /* font-family: 'Mountains of Christmas', cursive !important; */
-/* font-family: 'ZCOOL KuaiLe', cursive !important; */
+font-family: 'ZCOOL KuaiLe', cursive !important;
 }
-
+.parallax{
+  background-image: linear-gradient(-225deg, #455499 0%, #422247 29%, #de3430 67%, #f9cb45 100%);
+}
 
 /* top: 11%;
     left: 78%; */
     /* fuck with these props and  variations depending on screen size */
 /* on small screen for title and button margin-top: 220px; */
+@keyframes play30 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -720px 0px;
+    /* animation-play-state:paused; */
+  }
+}
+.step{
+  animation-duration: 1500ms;
+  animation-timing-function: steps(30);
+}
+.shapeshifter{
+  width: 24px;
+  height: 24px;
+  transform: scale(2.5);
+  margin: auto;
+  /* justify-content: center; */
+}
+.shapeshifter.play:hover  {
+  animation-name: play30;
+  animation-direction: alternate;
+  animation-iteration-count:2;
+  /* z-index: 10; */
+}
+/* .shapeshifter.play:hover {
+animation-play-state:running;
+ animation-iteration-count:2;
+} */
+@keyframes play18 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -432px 0px;
+  }
+}
+.stepUp{
+   animation-duration: 1000ms;
+  animation-timing-function: steps(18);
+}
 
+.shapeshifter.play2:hover {
+  animation-name: play18;
+   animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+.down{
+  opacity: 0;
+  font-size: 53px;
+  padding-top:4px;
+}
+.down:hover{
+  opacity: 1;
+}
 </style>
 
  

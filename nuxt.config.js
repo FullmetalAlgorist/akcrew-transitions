@@ -36,7 +36,8 @@ export default {
   plugins: [
     './plugins/base',
     '~/plugins/lightGallery.client.js',
-    '~/plugins/spinner.client.js'
+    '~/plugins/spinner.client.js',
+    '~/plugins/scroll.js'
   ],
   /*
   ** Nuxt.js modules

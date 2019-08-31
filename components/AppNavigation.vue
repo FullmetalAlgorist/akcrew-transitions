@@ -5,7 +5,7 @@
       dark
       extended
       flat
-      height="75px"
+      height="100%"
     :style="{'background-image': 'linear-gradient(rgba(255, 255, 255, 0), rgba(4, 4, 4, 0.54)),'+'url(' + banner + ')'}"
     >
     </v-toolbar>
@@ -56,7 +56,7 @@ return {
       return 'https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/blog-gallery/rocks.jpg'
     }
     else{
-      this.toType= 'Scroll for parallax effect     :)';
+      this.toType= 'Scroll for parallax effect  :)';
       return 'https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/trianglify-lowres.png'
     }
   }

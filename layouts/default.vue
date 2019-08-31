@@ -34,7 +34,7 @@ export default {
 <style>
 /* global styles!! */
 .theme--dark.application{
-  background-image: linear-gradient(-225deg, #455499 0%, #422247 29%, #de3430 67%, #f9cb45 100%);
+  /* background-image: linear-gradient(-225deg, #455499 0%, #422247 29%, #de3430 67%, #f9cb45 100%); */
 }
 
 </style>

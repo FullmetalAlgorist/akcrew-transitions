@@ -21,7 +21,7 @@
                     <v-flex xs12>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
+                      <v-icon v-if="ico" class="ico black--text text--lighten-2" >{{ ico }}</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">{{ secondTitle }}</div>
@@ -31,7 +31,6 @@
                     </v-card-text>
                   </v-card>
                 </v-flex>
-            
               </v-layout>
             </v-container>
           </v-flex>
@@ -62,10 +61,10 @@
         type: String,
         required: false
       },
-    //   value: {
-    //     type: Object,
-    //     default: () => ({})
-    //   }
+      ico: {
+        type: String,
+       required: false
+      }
     },
 
     computed: {
@@ -77,4 +76,10 @@
     //   }
     }
   }
+  
 </script>
+<style lang="scss" scoped>
+.ico{
+   transform: scale(2.5);
+ }
+</style>
