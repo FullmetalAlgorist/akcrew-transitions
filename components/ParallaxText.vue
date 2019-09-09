@@ -21,7 +21,11 @@
                     <v-flex xs12>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon v-if="ico" class="ico black--text text--lighten-2" >{{ ico }}</v-icon>
+                      <!-- <v-icon v-if="ico" class="ico black--text text--lighten-2" >{{ ico }}</v-icon> -->
+                     <div class="shapeshifter stepUp ico play2"
+                          :style="{backgroundImage: 'url('+ ico +')'}"
+                 
+                  ></div>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">{{ secondTitle }}</div>
@@ -41,7 +45,9 @@
   export default {
       data(){
           return  {
-
+ flame: require("@/static/sprite_60fps.svg"),
+    dude: require("@/static/dude_60fps.svg"),
+          snake: "https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/snake.svg"
           }
       },
     props: {
@@ -81,5 +87,42 @@
 <style lang="scss" scoped>
 .ico{
    transform: scale(2.5);
+   z-index: 10;
  }
+ @keyframes play18 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -432px 0px;
+  }
+}
+.stepUp {
+  animation-duration: 1000ms;
+  animation-timing-function: steps(18);
+}
+
+.shapeshifter.play2 {
+  animation-name: play18;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.down {
+  opacity: 0;
+  font-size: 53px;
+  padding-top: 4px;
+}
+.down:hover {
+  opacity: 1;
+}
+.blue{
+  background-color: blue;
+}
+.shapeshifter {
+  width: 24px;
+  height: 24px;
+  transform: scale(2.5);
+  margin: auto;
+  /* justify-content: center; */
+}
 </style>

@@ -18,7 +18,7 @@
             <!-- <div >
             <h1 class="white--text mb-2 display-1 text-xs-center hello">Oh hello</h1>
             <div class="subheading mb-3 text-xs-center hello">welcome</div>
-            </div>-->
+            </div> -->
           </v-layout>
         </v-parallax>
       </section>
@@ -61,23 +61,6 @@
       </section>
 
       <parallaxx srrc="https://mariah-transitions-blog.s3-us-west-2.amazonaws.com/super/one.png"></parallaxx>
-      <!-- <section>
-        <v-parallax class="lines" :src="require('@/assets/three6.png')" height="400">
-          <v-layout column align-end justify-center >
-                <div  class="text-xs-center">
-      <v-img
-      class="logo"
-     height="175"
-     width="175"
-        :src="require('@/assets/logosblack.png')"
-      > </v-img>-->
-      <!-- <v-icon  class="ico">home</v-icon> -->
-      <!-- </div>
-           
-          </v-layout>
-        </v-parallax>
-      </section>-->
-
       <section>
         <v-container grid-list-xl>
           <v-layout row wrap justify-center class="my-5">
@@ -131,6 +114,7 @@
           :text2="text.text2"
           :ico="text.ico"
         ></parallaxx-text>
+              
       </div>
       <div id="div-id"></div>
     </v-content>
@@ -177,13 +161,8 @@ export default {
 <style lang= "scss" scoped>
 .op {
   opacity: 0.8;
-  /* background-color: #aa37b4; */
-  /* margin-top: 10px !important;
-  margin-right: 23px; */
 }
 .hell {
-  /* margin-top: 70px; */
-
   margin-bottom: 20px;
   background-image: linear-gradient(
     -225deg,
@@ -251,7 +230,7 @@ export default {
   margin: auto;
   /* justify-content: center; */
 }
-.shapeshifter.play:hover {
+.shapeshifter.play {
   animation-name: play30;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -274,7 +253,7 @@ animation-play-state:running;
   animation-timing-function: steps(18);
 }
 
-.shapeshifter.play2:hover {
+.shapeshifter.play2 {
   animation-name: play18;
   animation-direction: alternate;
   animation-iteration-count: infinite;
