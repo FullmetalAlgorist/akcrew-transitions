@@ -9,16 +9,13 @@
           <v-layout column align-center justify-center>
             <!-- <a href="#div-id" v-smooth-scroll="{ duration: 30000, offset: -50 }">Anchor</a>  -->
 
-            <v-btn class="hell op" light large fab>
+            <v-btn class="hell op" light large fab
+            @click="$vuetify.goTo('#div-id', {duration: 7000, easing: 'linear'})"
+            >
               <!-- to="#div-id"
               v-smooth-scroll="{ duration: 30000}"-->
               <v-icon class="down" x-large>arrow_drop_down</v-icon>
             </v-btn>
-            <!-- <img src="@/assets/logos/bierebw.png" alt="Vuetify.js" height="200"> -->
-            <!-- <div >
-            <h1 class="white--text mb-2 display-1 text-xs-center hello">Oh hello</h1>
-            <div class="subheading mb-3 text-xs-center hello">welcome</div>
-            </div> -->
           </v-layout>
         </v-parallax>
       </section>
